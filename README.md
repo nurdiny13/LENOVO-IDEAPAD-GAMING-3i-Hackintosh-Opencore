@@ -19,7 +19,7 @@
 # What's Working?
 - Intel HD 630 Graphics full QE/CI 
 - CPU power management 
-- Battery (Cycles doesn't show properly)
+- Battery
 - All USB ports 
 - Realtek Ethernet port 
 - Realtek ALC256 Audio (including headphones jack)
