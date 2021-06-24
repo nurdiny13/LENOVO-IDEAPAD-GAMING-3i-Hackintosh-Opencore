@@ -36,7 +36,3 @@ LENOVO IDEAPAD GAMING 3i Hackintosh Opencore 0.7.0
 - Apple Pay, requires TouchID, more information [here](https://discussions.apple.com/thread/7808558)
 - GTX 1650 Ti
 - HDMI
-
-# Credits
-- [Acidanthera](https://github.com/acidanthera) for most of the Kexts.
-- [daliansky](https://github.com/daliansky) for some ACPI patches.
