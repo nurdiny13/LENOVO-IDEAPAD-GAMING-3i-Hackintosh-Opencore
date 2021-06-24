@@ -1,4 +1,4 @@
-LENOVO IDEAPAD GAMING 3i Hackintosh Opencore 0.7.0
+# Lenovo IdeaPad Gaming 3i Hackitnosh 
 
 # Laptop Hardware
 
