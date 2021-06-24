@@ -1,4 +1,4 @@
-# Lenovo IdeaPad Gaming 3i Hackitnosh 
+# Lenovo IdeaPad Gaming 3i Hackintosh 
 
 # Laptop Hardware
 
