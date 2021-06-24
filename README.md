@@ -25,7 +25,7 @@
 - Realtek ALC256 Audio (including headphones jack)
 - Wi-Fi 
 - Internal webcam with Facetime
-- MSFT0001 Trackpad (including gestures)
+- MSFT0001 Trackpad (full gestures)
 - Sleep (hibernation, lid sleep, and lid wake)
 - Screen Brightness
 - Fn keys
