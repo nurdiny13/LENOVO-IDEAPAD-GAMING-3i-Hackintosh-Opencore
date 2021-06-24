@@ -1,6 +1,6 @@
 LENOVO IDEAPAD GAMING 3i Hackintosh Opencore 0.7.0
 
-Spesifikasi Laptop
+# Laptop Hardware
 
 
 - <b>CPU</b>: [Intel i5 10300H](https://ark.intel.com/content/www/us/en/ark/products/201839/intel-core-i5-10300h-processor-8m-cache-up-to-4-50-ghz.html) Quad-Core CPU (Comet Lake-U)
@@ -36,3 +36,7 @@ Spesifikasi Laptop
 - Apple Pay, requires TouchID, more information [here](https://discussions.apple.com/thread/7808558)
 - GTX 1650 Ti
 - HDMI
+
+# Credits
+- [Acidanthera](https://github.com/acidanthera) for most of the Kexts.
+- [daliansky](https://github.com/daliansky) for some ACPI patches.
