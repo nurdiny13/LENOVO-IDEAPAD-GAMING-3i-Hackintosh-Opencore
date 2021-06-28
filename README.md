@@ -26,13 +26,12 @@
 - Wi-Fi 
 - Internal webcam with Facetime
 - MSFT0001 Trackpad (full gestures)
-- Sleep (hibernation, lid sleep, and lid wake)
+- Sleep
 - Screen Brightness
 - Fn keys
 - macOS Catalina 10.15
 
 
 # What's Not Working?
-- Apple Pay, requires TouchID, more information [here](https://discussions.apple.com/thread/7808558)
 - GTX 1650 Ti
 - HDMI
