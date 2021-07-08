@@ -4,7 +4,7 @@
 
 
 - <b>CPU</b>: [Intel i5 10300H](https://ark.intel.com/content/www/us/en/ark/products/201839/intel-core-i5-10300h-processor-8m-cache-up-to-4-50-ghz.html) Quad-Core CPU (Comet Lake)
-- <b>IGPU</b>: Intel HD 630 Graphics 
+- <b>IGPU</b>: Intel UHD 630 Graphics 
 - <b>DGPU</b>: GTX 1650 Ti
 - <b>Storage</b>: SSD 512 Team sata ngff with converter to sata
 - <b>RAM</b>: 1x8 DDR4 2933
