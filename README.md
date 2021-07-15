@@ -2,6 +2,7 @@
 
 # Laptop Hardware
 
+Success Hackintosh Lenovo Ideapad Gaming 3 Mac Os Catalina
 
 - <b>CPU</b>: [Intel i5 10300H](https://ark.intel.com/content/www/us/en/ark/products/201839/intel-core-i5-10300h-processor-8m-cache-up-to-4-50-ghz.html) Quad-Core CPU (Comet Lake)
 - <b>IGPU</b>: Intel UHD 630 Graphics 
