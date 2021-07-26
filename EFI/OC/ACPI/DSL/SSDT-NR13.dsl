@@ -64,9 +64,9 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                     "IOName", 
                     "#nurdiny13", 
                     "model", 
-                    Buffer (0x1A)
+                    Buffer ()
                     {
-                        "GTX 1650 Ti (Unsupported)"
+                        "NVIDIA GeForce GTX 1650 Ti (Unsupported)"
                     }, 
 
                     "device_type", 
@@ -118,9 +118,9 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                 Return (Package (0x06)
                 {
                     "model", 
-                    Buffer (0x1B)
+                    Buffer ()
                     {
-                        "Comet Lake HECI Controller"
+                        "Intel Corporation Comet Lake IMEI Controller"
                     }, 
 
                     "device_type", 
@@ -160,9 +160,9 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                 Return (Package (0x06)
                 {
                     "model", 
-                    Buffer (0x21)
+                    Buffer ()
                     {
-                        "Comet Lake Serial ATA Controller"
+                        "Intel Corporation Comet Lake Serial ATA Controller"
                     }, 
 
                     "device_type", 
@@ -202,9 +202,9 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                 Return (Package (0x06)
                 {
                     "model", 
-                    Buffer (0x28)
+                    Buffer ()
                     {
-                        "Comet Lake USB 3.1 xHCI Host Controller"
+                        "Intel Corporation Comet Lake USB 3.1 xHCI Host Controller"
                     }, 
 
                     "device_type", 
@@ -244,9 +244,9 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                 Return (Package (0x06)
                 {
                     "model", 
-                    Buffer (0x19)
+                    Buffer ()
                     {
-                        "Comet Lake PCH CNVi WiFi"
+                        "Intel Corporation Wi-Fi 6 AX201 160MHz"
                     }, 
 
                     "device_type", 
@@ -286,9 +286,9 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                 Return (Package (0x06)
                 {
                     "model", 
-                    Buffer (0x3A)
+                    Buffer ()
                     {
-                        "RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller"
+                        "Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller"
                     }, 
 
                     "device_type", 
@@ -328,9 +328,9 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                 Return (Package (0x06)
                 {
                     "model", 
-                    Buffer (0x44)
+                    Buffer ()
                     {
-                        "Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem"
+                        "Intel Corporation Thermal Subsystem"
                     }, 
 
                     "device_type", 
@@ -370,9 +370,9 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                 Return (Package (0x06)
                 {
                     "model", 
-                    Buffer (0x20)
+                    Buffer ()
                     {
-                        "Comet Lake PCH SMBus Controller"
+                        "Intel Corporation Comet Lake PCH SMBus Controller"
                     }, 
 
                     "device_type", 
