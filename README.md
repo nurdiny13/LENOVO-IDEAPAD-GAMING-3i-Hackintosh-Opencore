@@ -1,8 +1,7 @@
-# Lenovo IdeaPad Gaming 3i Hackintosh 
+# Lenovo IdeaPad Gaming 3i Hackintosh
 
 # Laptop Hardware
 
-Success Hackintosh Lenovo Ideapad Gaming 3 Mac Os Catalina
 
 - <b>CPU</b>: [Intel i5 10300H](https://ark.intel.com/content/www/us/en/ark/products/201839/intel-core-i5-10300h-processor-8m-cache-up-to-4-50-ghz.html) Quad-Core CPU (Comet Lake)
 - <b>IGPU</b>: Intel UHD 630 Graphics 
@@ -20,6 +19,7 @@ Success Hackintosh Lenovo Ideapad Gaming 3 Mac Os Catalina
 # What's Working?
 - Intel HD 630 Graphics full QE/CI 
 - CPU power management 
+- Conservation Mode
 - Battery
 - All USB ports 
 - Realtek Ethernet port 
@@ -29,10 +29,13 @@ Success Hackintosh Lenovo Ideapad Gaming 3 Mac Os Catalina
 - MSFT0001 Trackpad (full gestures)
 - Sleep
 - Screen Brightness
+- Brightness Key
 - Fn keys
 - macOS Catalina 10.15
-
 
 # What's Not Working?
 - GTX 1650 Ti
 - HDMI
+
+# Misc
+- You can enable/disable Conservation Mode in Windows or ubuntu
