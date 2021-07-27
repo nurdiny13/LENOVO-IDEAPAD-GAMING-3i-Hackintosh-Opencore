@@ -1,11 +1,11 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
- * Copyright (c) 2000 - 2018 Intel Corporation
+ * AML/ASL+ Disassembler version 20200925 (64-bit version)
+ * Copyright (c) 2000 - 2020 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-GPU.aml, Mon Jul 26 13:45:30 2021
+ * Disassembly of iASLQcuAFn.aml, Tue Jul 27 13:03:19 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
@@ -20,8 +20,8 @@
  */
 DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
 {
-    External (_SB_.PCI0.GFX0, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.GFX0.XDSM, MethodObj)    // 4 Arguments (from opcode)
+    External (_SB_.PCI0.GFX0, DeviceObj)
+    External (_SB_.PCI0.GFX0.XDSM, MethodObj)    // 4 Arguments
 
     Scope (_SB.PCI0.GFX0)
     {
@@ -31,7 +31,7 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
             {
                 Return (Buffer (One)
                 {
-                     0x03                                           
+                     0x03                                             // .
                 })
             }
 
@@ -46,7 +46,7 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                     "AAPL,ig-platform-id", 
                     Buffer (0x04)
                     {
-                         0x09, 0x00, 0xA5, 0x3E                         
+                         0x09, 0x00, 0xA5, 0x3E                           // ...>
                     }, 
 
                     "model", 
@@ -70,49 +70,49 @@ DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
                     "device-id", 
                     Buffer (0x04)
                     {
-                         0x9B, 0x3E, 0x00, 0x00                         
+                         0x9B, 0x3E, 0x00, 0x00                           // .>..
                     }, 
 
                     "disable-external-gpu", 
                     Buffer (0x04)
                     {
-                         0x01, 0x00, 0x00, 0x00                         
+                         0x01, 0x00, 0x00, 0x00                           // ....
                     }, 
 
                     "force-online", 
                     Buffer (0x04)
                     {
-                         0x01, 0x00, 0x00, 0x00                         
+                         0x01, 0x00, 0x00, 0x00                           // ....
                     }, 
 
                     "force-online-framebuffers", 
                     Buffer (0x08)
                     {
-                         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 
+                         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01   // ........
                     }, 
 
                     "framebuffer-patch-enable", 
                     Buffer (0x04)
                     {
-                         0x01, 0x00, 0x00, 0x00                         
+                         0x01, 0x00, 0x00, 0x00                           // ....
                     }, 
 
                     "framebuffer-stolenmem", 
                     Buffer (0x04)
                     {
-                         0x00, 0x00, 0x30, 0x01                         
+                         0x00, 0x00, 0x30, 0x01                           // ..0.
                     }, 
 
                     "framebuffer-fbmem", 
                     Buffer (0x04)
                     {
-                         0x00, 0x00, 0x90, 0x00                         
+                         0x00, 0x00, 0x90, 0x00                           // ....
                     }, 
 
                     "framebuffer-unifiedmem", 
                     Buffer (0x04)
                     {
-                         0x00, 0x00, 0x00, 0xC0                         
+                         0x00, 0x00, 0x00, 0xC0                           // ....
                     }
                 })
             }
