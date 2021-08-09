@@ -24,6 +24,7 @@
 - All USB ports 
 - Realtek Ethernet port 
 - Realtek ALC256 Audio (including headphones jack)
+- Bluetooth
 - Wi-Fi 
 - Internal webcam with Facetime
 - MSFT0001 Trackpad (full gestures)
