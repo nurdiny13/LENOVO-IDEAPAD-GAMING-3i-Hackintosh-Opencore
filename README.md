@@ -1,5 +1,5 @@
 # Lenovo IdeaPad Gaming 3i Hackintosh
-
+Opencore 0.7.0
 # Laptop Hardware
 
 
