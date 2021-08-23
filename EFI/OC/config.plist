@@ -94,6 +94,14 @@
 				<key>Path</key>
 				<string>SSDT-NR13.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-MCHC.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-AWAC.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>

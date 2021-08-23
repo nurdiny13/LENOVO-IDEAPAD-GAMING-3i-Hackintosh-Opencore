@@ -5,18 +5,18 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-PLNF-CFL.aml, Mon Aug  9 12:27:46 2021
+ * Disassembly of SSDT-PLNF-CFL.aml, Mon Aug 23 16:56:32 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x0000008C (140)
+ *     Length           0x00000092 (146)
  *     Revision         0x02
- *     Checksum         0x06
+ *     Checksum         0xC3
  *     OEM ID           "ACDT"
  *     OEM Table ID     "PNLFCFL"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20210331 (539034417)
+ *     Compiler Version 0x20200925 (538970405)
  */
 DefinitionBlock ("", "SSDT", 2, "ACDT", "PNLFCFL", 0x00000000)
 {
@@ -24,6 +24,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "PNLFCFL", 0x00000000)
 
     Device (_SB.PCI0.GFX0.PNLF)
     {
+        Name (_ADR, Zero)  // _ADR: Address
         Name (_HID, EisaId ("APP0002"))  // _HID: Hardware ID
         Name (_CID, "backlight")  // _CID: Compatible ID
         Name (_UID, 0x13)  // _UID: Unique ID

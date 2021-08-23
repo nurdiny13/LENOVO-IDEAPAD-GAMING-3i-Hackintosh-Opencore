@@ -5,18 +5,18 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-NR13.aml, Mon Aug  9 12:27:46 2021
+ * Disassembly of SSDT-NR13.aml, Mon Aug 23 16:56:32 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
  *     Length           0x00000BB5 (2997)
  *     Revision         0x02
- *     Checksum         0x53
+ *     Checksum         0x5A
  *     OEM ID           "Apple"
  *     OEM Table ID     "Nurdin"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20210331 (539034417)
+ *     Compiler Version 0x20200925 (538970405)
  */
 DefinitionBlock ("", "SSDT", 2, "Apple", "Nurdin", 0x00000000)
 {

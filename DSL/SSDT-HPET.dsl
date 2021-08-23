@@ -5,7 +5,7 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-HPET.aml, Mon Aug  9 12:27:46 2021
+ * Disassembly of SSDT-HPET.aml, Mon Aug 23 16:56:32 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
