@@ -46,3 +46,12 @@ Opencore 0.7.0
 ![image](https://user-images.githubusercontent.com/17905038/168947693-bccfbee7-c6db-4912-aa24-1ba9d8f1c4ab.png)
 
 if you find the values are the same as mine (according to the screenshot) there should be no problem with your touchpad, but if it's different then I'm sure it won't work.
+
+# Display Issue
+
+- go to efi/oc/
+- edit file config.plist use plist editor 
+- disable SSDT-IGPU.aml
+- follow guide https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#deviceproperties
+- another reference if dortania guide is wont work https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md
+- use brain
