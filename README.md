@@ -40,3 +40,9 @@ Opencore 0.7.0
 
 # Misc
 - You can enable/disable Conservation Mode in Windows or ubuntu
+
+# Touchpad Issue
+- go to device manager > Human interface device > hid compilant touchpad > properties > details tab > property > hardware ids.
+![image](https://user-images.githubusercontent.com/17905038/168947693-bccfbee7-c6db-4912-aa24-1ba9d8f1c4ab.png)
+
+if you find the values are the same as mine (according to the screenshot) there should be no problem with your touchpad, but if it's different then I'm sure it won't work.
