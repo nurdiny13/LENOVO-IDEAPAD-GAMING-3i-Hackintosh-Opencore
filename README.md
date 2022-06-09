@@ -55,3 +55,6 @@ if you find the values are the same as mine (according to the screenshot) there 
 - follow guide https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#deviceproperties
 - another reference if dortania guide is wont work https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md
 - use brain
+
+# donating me? 
+- paypal.me/nurdiny
