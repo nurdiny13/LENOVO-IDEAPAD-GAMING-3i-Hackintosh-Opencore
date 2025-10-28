@@ -1,35 +1,19 @@
 /*
- * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
- * Copyright (c) 2000 - 2018 Intel Corporation
- * 
- * Disassembling to symbolic ASL+ operators
- *
- * Disassembly of SSDT-TPD0.aml, Mon Aug 23 16:56:32 2021
- *
- * Original Table Header:
- *     Signature        "SSDT"
- *     Length           0x000002B7 (695)
- *     Revision         0x02
- *     Checksum         0x35
- *     OEM ID           "hack"
- *     OEM Table ID     "TPXX"
- *     OEM Revision     0x00000000 (0)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20200925 (538970405)
+ * SSDT-TPXX (fixed: use literal GPIO pin 0x004B and return SBFB + SBFG in _CRS)
+ * Based on your original DSDT fragment — only SBFG pin and _CRS modified
  */
 DefinitionBlock ("", "SSDT", 2, "hack", "TPXX", 0x00000000)
 {
-    External (_SB_.GNUM, MethodObj)    // 1 Arguments (from opcode)
-    External (_SB_.INUM, MethodObj)    // 1 Arguments (from opcode)
-    External (_SB_.PCI0.HIDG, IntObj)    // (from opcode)
-    External (_SB_.PCI0.I2C1, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.I2C1.TPD0, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.I2C1.TPD0.XDSM, MethodObj)    // 4 Arguments (from opcode)
-    External (_SB_.PCI0.I2C2, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.TP7G, IntObj)    // (from opcode)
-    External (_SB_.SHPO, MethodObj)    // 2 Arguments (from opcode)
-    External (TPTY, FieldUnitObj)    // (from opcode)
+    External (_SB_.GNUM, MethodObj)
+    External (_SB_.INUM, MethodObj)
+    External (_SB_.PCI0.HIDG, IntObj)
+    External (_SB_.PCI0.I2C1, DeviceObj)
+    External (_SB_.PCI0.I2C1.TPD0, DeviceObj)
+    External (_SB_.PCI0.I2C1.TPD0.XDSM, MethodObj)
+    External (_SB_.PCI0.I2C2, DeviceObj)
+    External (_SB_.PCI0.TP7G, IntObj)
+    External (_SB_.SHPO, MethodObj)
+    External (TPTY, FieldUnitObj)
 
     Scope (\)
     {
@@ -44,7 +28,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "TPXX", 0x00000000)
 
     Scope (_SB.PCI0.I2C1.TPD0)
     {
-        Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+        Method (_DSM, 4, NotSerialized)
         {
             If (!_OSI ("Darwin"))
             {
@@ -74,11 +58,12 @@ DefinitionBlock ("", "SSDT", 2, "hack", "TPXX", 0x00000000)
             })
             Name (SBFG, ResourceTemplate ()
             {
+                /* literal GPIO pin (evaluated GNUM result) */
                 GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
                     "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
                     )
-                    {   // Pin list
-                        0x0017
+                    {   // Pin list — replaced with absolute pin 0x004B
+                        0x004B
                     }
             })
             CreateWordField (SBFB, \_SB.PCI0.I2C1.TPDX._Y00._ADR, BADR)  // _ADR: Address
@@ -120,9 +105,9 @@ DefinitionBlock ("", "SSDT", 2, "hack", "TPXX", 0x00000000)
 
             Method (_CRS, 0, Serialized)  // _CRS: Current Resource Settings
             {
-                Return (ConcatenateResTemplate (SBFB, SBFI))
+                /* For modern Comet Lake: prefer GPIO-based interrupt (SBFG) */
+                Return (ConcatenateResTemplate (SBFB, SBFG))
             }
         }
     }
 }
-
